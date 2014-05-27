@@ -23,7 +23,7 @@ class dns::server (
     owner   => 'root',
     group   => 'root',
     mode    => '0644',
-    source => 'puppet:///modules/dns/resolv.dnsmasq',
+    content => template('dns/resolv.dnsmasq.erb'),
     notify => Class['dnsmasq'],
   }
 }
