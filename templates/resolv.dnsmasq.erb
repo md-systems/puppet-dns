@@ -1,6 +1,6 @@
 # NOTE This file is manage by puppet
 # ALL manual changes will be overwritten
 
-<% @nameservers.each do |ns| -%>
+<% @upstream.each do |ns| -%>
 nameserver <%= ns %>
 <% end -%>

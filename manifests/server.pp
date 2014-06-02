@@ -1,6 +1,7 @@
 class dns::server (
   $searchpath,
   $nameservers,
+  $upstream,
   $domainname = $domain,
   $options = undef,
   $location = $::location
